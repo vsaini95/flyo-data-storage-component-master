@@ -1,0 +1,203 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: hsl(229, 57%, 11%);
+  background-image: url(images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  display: flex;
+  width: 64%;
+  height: 210px;
+}
+.item1 {
+  background-color: hsl(228, 56%, 26%);
+  min-width: 345px;
+  width: 36%;
+  height: 100%;
+  margin-right: 30px;
+  border-radius: 10px 35% 10px 10px;
+  padding: 40px;
+}
+.item1 img {
+  width: 145px;
+  margin-bottom: 32px;
+}
+.icons {
+  display: flex;
+}
+.icons figure {
+  background-color: hsl(229, 57%, 11%);
+  margin-right: 20px;
+  padding: 12px;
+  height: 50px;
+  width: 50px;
+  border-radius: 9px;
+}
+figure .icon1 {
+  width: 23px;
+  height: 27px;
+}
+figure .icon2 {
+  width: 25px;
+  height: 23px;
+}
+figure .icon3 {
+  width: 25px;
+  height: 20px;
+}
+.shape {
+  position: absolute;
+  top: 35%;
+  right: 20%;
+  background-color: #fff;
+  width: 200px;
+  height: 79px;
+  border-radius: 12px;
+}
+.shape p {
+  padding-top: 15px;
+  padding-left: 33px;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+}
+.shape span {
+  font-size: 15px;
+  color: hsl(229, 7%, 55%);
+}
+#triangle-topright {
+  position: absolute;
+  top: 42%;
+  right: 20%;
+  width: 0;
+  height: 0;
+  border-top: 50px solid white;
+  border-left: 50px solid transparent;
+}
+
+.item2 {
+  background-color: hsl(228, 56%, 26%);
+  min-width: 345px;
+  width: 62%;
+  height: 76%;
+  margin-top: 49px;
+  border-radius: 10px;
+  padding: 39px;
+  font-family: "Raleway", sans-serif;
+  color: hsl(243, 100%, 93%);
+}
+.item2 p {
+  font-weight: 300;
+}
+.item2 span {
+  font-weight: 600;
+}
+.item2 .bar {
+  height: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  background-color: hsl(229, 57%, 11%);
+}
+.bar .bar-picker {
+  width: 75%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(to left, hsl(335, 100%, 65%), hsl(6, 100%, 80%));
+  display: flex;
+  justify-content: end;
+  padding: 2px;
+}
+.bar-picker .circle {
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+.storage {
+  display: flex;
+  justify-content: space-between;
+}
+.storage p {
+  font-size: 13px;
+  font-weight: 600;
+}
+@media screen and (max-width: 1025px) {
+  .container {
+    background-image: url(images/bg-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .wrapper {
+    width: 83%;
+  }
+  .shape {
+    top: 35%;
+    right: 10%;
+    width: 180px;
+    height: 70px;
+  }
+  #triangle-topright {
+    right: 10%;
+    border-top: 30px solid white;
+    border-left: 35px solid transparent;
+  }
+}
+@media screen and (max-width: 769px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .item2 {
+    height: 220px;
+    margin-top: 15px;
+  }
+  #triangle-topright {
+    display: none;
+  }
+  .item1 {
+    margin-right: 0;
+  }
+  .shape {
+    top: 73%;
+    right: 38%;
+    width: 180px;
+    height: 70px;
+  }
+  .container {
+    background-image: url(images/bg-mobile.png);
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 426px) {
+  .item2 {
+    height: 220px;
+    margin-top: 15px;
+  }
+  .shape {
+    right: 31%;
+    width: 180px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .shape {
+    right: 27%;
+  }
+}
